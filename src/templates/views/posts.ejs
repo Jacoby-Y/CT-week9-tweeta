@@ -1,0 +1,14 @@
+<%- include('../partials/header.ejs') %>
+<!-- <h1>Shop Our Store</h1> -->
+<% for (post of posts) { %>
+<div class="card">
+  <h5 class="card-header a"><%= post.author %></h5>
+  <div class="card-body">
+    <p class="card-text"><%= post.body %></p>
+    <p class="card-text text-secondary"><%= post.posted_on %></p>
+    <a href="#">View</a>
+  </div>
+</div>
+<% } %>
+
+<%- include('../partials/footer.ejs') %>
